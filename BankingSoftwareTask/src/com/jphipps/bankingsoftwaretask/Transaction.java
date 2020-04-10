@@ -45,7 +45,7 @@ public class Transaction {
         }
     }
 
-    public int getAccountID() {
+    public int getAccountId() {
         return accountID;
     }
 

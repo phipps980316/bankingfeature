@@ -61,7 +61,7 @@ public class CSVFileHandler {
             writer.append("\n");
 
             for (Transaction transaction : transactions){
-                writer.append(String.valueOf(transaction.getAccountID()));
+                writer.append(String.valueOf(transaction.getAccountId()));
                 writer.append(",");
                 writer.append(transaction.getAccountTypeString());
                 writer.append(",");

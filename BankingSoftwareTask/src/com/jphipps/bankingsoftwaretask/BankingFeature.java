@@ -32,11 +32,11 @@ public class BankingFeature {
             for(Transaction transaction: transactions) {
                 switch (transaction.getAccountType()){
                     case CURRENT:
-                        if(currentAccount.getId() < 0) currentAccount.setId(transaction.getAccountID());
+                        if(currentAccount.getId() < 0) currentAccount.setId(transaction.getAccountId());
                         currentAccount.updateBalance(transaction.getValue());
                         break;
                     case SAVINGS:
-                        if(savingsAccount.getId() < 0) savingsAccount.setId(transaction.getAccountID());
+                        if(savingsAccount.getId() < 0) savingsAccount.setId(transaction.getAccountId());
                         savingsAccount.updateBalance(transaction.getValue());
                         break;
                     default:
